@@ -17,7 +17,7 @@ html{scroll-behavior:smooth}
 body{margin:0}
 a{color:#9A5200;transition:opacity .2s ease}a:hover{opacity:.8}
 a:focus-visible,button:focus-visible{outline:3px solid #F2A23A;outline-offset:3px;border-radius:4px}
-.what-i-do li{grid-column:span 2}.what-i-do li:nth-child(n+4){grid-column:span 3}@media (max-width:640px){.what-i-do li,.what-i-do li:nth-child(n+4){grid-column:span 3}.what-i-do li:last-child{grid-column:span 6}}
+.what-i-do{grid-template-columns:repeat(5,minmax(0,1fr)) !important}.what-i-do li{grid-column:auto}@media (max-width:1000px){.what-i-do{grid-template-columns:repeat(6,minmax(0,1fr)) !important}.what-i-do li{grid-column:span 2}.what-i-do li:nth-child(n+4){grid-column:span 3}}@media (max-width:640px){.what-i-do li,.what-i-do li:nth-child(n+4){grid-column:span 3}.what-i-do li:last-child{grid-column:span 6}}
 @media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important}}
 
 .skip{position:absolute;left:-9999px;top:8px;background:#F2A23A;color:#141A26;padding:10px 16px;border-radius:6px;font-weight:600;z-index:10}.skip:focus{left:8px}
@@ -42,13 +42,13 @@ a:focus-visible,button:focus-visible{outline:3px solid #F2A23A;outline-offset:3p
 </header>
 
 <main id="main">
-<div style="display: flex; flex-wrap: wrap;">
-<section aria-labelledby="hero-h" style="flex: 1 1 560px; min-width: 0; position: relative; min-height: clamp(620px, 62vw, 900px); background: #070B14; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
-<img src="images/hero.jpg" alt="Illustrated placeholder: Saturn and its rings against a starfield. Replace with a public-domain Cassini photo." style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 72% 30%; display: block;">
+<div>
+<section aria-labelledby="hero-h" style="position: relative; min-height: clamp(620px, 56vw, 820px); background: #070B14; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
+<img src="images/hero.jpg" alt="Illustrated placeholder: Saturn and its rings against a starfield. Replace with a public-domain Cassini photo." style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 40%; display: block;">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,11,20,0) 0%, rgba(7,11,20,0.25) 45%, rgba(7,11,20,0.94) 100%);"></div>
-<div style="position: relative; z-index: 2; padding: 56px clamp(24px, 4vw, 64px) 72px; display: flex; flex-direction: column; gap: 22px;">
+<div style="position: relative; z-index: 2; width: 100%; max-width: 1280px; margin: 0 auto; padding: 160px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px;">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #F2A23A;">Science communications · JPL · NASA · CBP</p>
-<h1 id="hero-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(52px, 6.4vw, 104px); line-height: 0.98; letter-spacing: -0.02em; color: #F6F4EF;">Complex science, clear stories.</h1>
+<h1 id="hero-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; max-width: 900px; font-size: clamp(52px, 7vw, 112px); line-height: 0.98; letter-spacing: -0.02em; color: #F6F4EF;">Complex science, clear stories.</h1>
 <p style="margin: 0; max-width: 520px; font-size: clamp(17px, 1.4vw, 19px); line-height: 1.55; color: #D5DBE6;">I turn mission science and data into stories executives and the public act on.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px;">
 <a href="#featured" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; background: #F2A23A; color: #141A26; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">See featured work</a>
@@ -58,22 +58,23 @@ a:focus-visible,button:focus-visible{outline:3px solid #F2A23A;outline-offset:3p
 </div>
 </section>
 
-<section aria-labelledby="hello-h" style="flex: 1 1 560px; min-width: 0; background: #F6F4EF; padding: 56px clamp(24px, 4vw, 64px) 48px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px;">
-<div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start;">
-<img src="images/headshot.jpg" alt="Headshot of Jeamay Palo (placeholder)" style="flex: 0 1 220px; width: 100%; max-width: 260px; aspect-ratio: 4 / 5; height: auto; object-fit: cover; display: block; border-radius: 8px; background: #E9E5DB;">
-<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<section aria-labelledby="hello-h" style="background: #F6F4EF; border-bottom: 1px solid #E2DDD3;">
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(56px, 7vw, 96px);">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: center;">
+<img src="images/headshot.jpg" alt="Headshot of Jeamay Palo (placeholder)" style="flex: 0 1 340px; width: 100%; max-width: 360px; aspect-ratio: 4 / 5; height: auto; object-fit: cover; display: block; border-radius: 8px; background: #E9E5DB;">
+<div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 18px;">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A5200;">Who I am</p>
-<h2 id="hello-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: clamp(40px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.015em; color: #141A26;">Hi, I'm Jem</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #141A26;">I'm a Strategic Communications Specialist with a passion for turning complex technical topics into clear, engaging, and visually compelling stories that the public can understand and leaders can act on. I bridge the technical and non-technical because inside every spreadsheet, chart, and dataset is a mission impact story that matters.</p>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3A4252;">I carry this passion through every stage of my career. I started as a high school math teacher, learning to explain hard things to English Learners. Then came nearly seven years at NASA, telling different mission and science stories, like <a href="work.html#cassini" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Cassini</a>, <a href="work.html#earth-science" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Earth science missions</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">the International Space Station</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Commercial Space</a>, and <a href="work.html#ocsdo" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">open science and AI</a>. Today I bring the same passion to telling the story of digital transformation at U.S. Customs and Border Protection.</p>
+<h2 id="hello-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: clamp(44px, 5vw, 72px); line-height: 1; letter-spacing: -0.015em; color: #141A26;">Hi, I'm Jem</h2>
+<p style="margin: 0; font-family: 'Newsreader', serif; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.5; color: #141A26;">I'm a Strategic Communications Specialist with a passion for turning complex technical topics into clear, engaging, and visually compelling stories that the public can understand and leaders can act on. I bridge the technical and non-technical because inside every spreadsheet, chart, and dataset is a mission impact story that matters.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3A4252;">I carry this passion through every stage of my career. I started as a high school math teacher, learning to explain hard things to English Learners. Then came nearly seven years at NASA, telling different mission and science stories, like <a href="work.html#cassini" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Cassini</a>, <a href="work.html#earth-science" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Earth science missions</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">the International Space Station</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Commercial Space</a>, and <a href="work.html#ocsdo" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">open science and AI</a>. Today I bring the same passion to telling the story of digital transformation at U.S. Customs and Border Protection.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; margin-top: 4px;">
 <a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; background: #141A26; color: #F6F4EF; font-size: 15px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect with me on LinkedIn</a>
 <a href="resume.html" style="display: inline-block; padding: 10px 0; font-weight: 600; font-size: 15px; color: #9A5200;">See my resume →</a>
 </div>
 </div>
 </div>
-<div style="margin-top: auto; display: flex; flex-direction: column; gap: 16px;">
-<h2 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: 30px; line-height: 1.1; color: #141A26;">What I do</h2>
+<div style="display: flex; flex-direction: column; gap: 24px;">
+<h2 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(34px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.01em; color: #141A26;">What I do</h2>
 <ul class="what-i-do" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px 16px;">
 <li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
 <span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Mission Impact Reports</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
@@ -96,6 +97,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #F2A23A;outline-offset:3p
 <img src="images/dataviz.jpg" alt="Illustrated placeholder: analytics dashboard" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
 </a></li>
 </ul>
+</div>
 </div>
 </section>
 </div>
