@@ -10,183 +10,211 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
 html{scroll-behavior:smooth}
 
 body{margin:0}
-a{color:#9A5200;transition:opacity .2s ease}a:hover{opacity:.8}
-a:focus-visible,button:focus-visible{outline:3px solid #F2A23A;outline-offset:3px;border-radius:4px}
-.what-i-do{grid-template-columns:repeat(5,minmax(0,1fr)) !important}.what-i-do li{grid-column:auto}@media (max-width:1000px){.what-i-do{grid-template-columns:repeat(6,minmax(0,1fr)) !important}.what-i-do li{grid-column:span 2}.what-i-do li:nth-child(n+4){grid-column:span 3}}@media (max-width:640px){.what-i-do li,.what-i-do li:nth-child(n+4){grid-column:span 3}.what-i-do li:last-child{grid-column:span 6}}
+a{color:#1F56B8;transition:opacity .2s ease}a:hover{opacity:.8}
+a:focus-visible,button:focus-visible{outline:3px solid #6CB4FF;outline-offset:3px;border-radius:4px}
+.tl-line{display:block}@media (max-width:900px){.tl{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.tl-line{display:none}}@media (max-width:560px){.tl{grid-template-columns:minmax(0,1fr) !important}}
+.milkyway{background:#050A1A url(images/milky-way.jpg) center/cover no-repeat}
+.gcard{transition:transform .35s ease,box-shadow .35s ease,background-color .35s ease,border-color .35s ease}.gcard img{transition:transform .6s ease}.gcard:hover,.gcard:focus-within{transform:translateY(-6px);background-color:rgba(15,42,92,0.5) !important;border-color:#FFFFFF !important;box-shadow:0 0 0 1px rgba(108,180,255,0.55),0 22px 44px -14px rgba(108,180,255,0.4)}.gcard:hover img,.gcard:focus-within img{transform:scale(1.04)}.hero-img{object-position:50% 45%}@media (min-width:901px){.hero-img{width:115% !important}}.hero-shade{background:linear-gradient(90deg,rgba(5,10,26,0.92) 0%,rgba(5,10,26,0.7) 32%,rgba(5,10,26,0.15) 62%,rgba(5,10,26,0) 80%),linear-gradient(180deg,rgba(5,10,26,0) 55%,rgba(5,10,26,0.85) 100%)}@media (max-width:900px){.hero-img{height:min(92vw,470px) !important;object-position:72% 50%}.hero-shade{background:linear-gradient(180deg,rgba(5,10,26,0) 0%,rgba(5,10,26,0) 30%,rgba(5,10,26,0.7) 48%,#050A1A 58%)}.hero-copy{padding-top:min(78vw,380px) !important}}
+.fcard{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.fcard img{transition:transform .6s ease}.fcard:hover,.fcard:focus-within{transform:translateY(-6px);border-color:#FFFFFF !important;background-color:rgba(15,42,92,0.5) !important;box-shadow:0 0 0 1px rgba(108,180,255,0.55),0 22px 44px -14px rgba(31,86,184,0.45)}.fcard:hover img,.fcard:focus-within img{transform:scale(1.04)}
+@media (prefers-reduced-motion: reduce){.fcard:hover,.fcard:focus-within{transform:none}.fcard:hover img,.fcard:focus-within img{transform:none}}
+@media (prefers-reduced-motion: reduce){.gcard:hover,.gcard:focus-within{transform:none}.gcard:hover img,.gcard:focus-within img{transform:none}}
 @media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important}}
+.tl-sec{background:linear-gradient(rgba(5,10,26,0.62),rgba(5,10,26,0.62)),#050A1A url(images/milky-way.jpg) center/cover no-repeat}.tl-float img{mix-blend-mode:lighten;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 1.5%,#000 98.5%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 1.5%,#000 98.5%,transparent 100%),linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%);mask-composite:intersect}
+.wcard{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.wcard img{transition:transform .6s ease}.wcard:hover,.wcard:focus-within{transform:translateY(-6px);border-color:#1F56B8 !important;box-shadow:0 0 0 1px rgba(31,86,184,0.35),0 22px 44px -14px rgba(31,86,184,0.4)}.wcard:hover img,.wcard:focus-within img{transform:scale(1.04)}@media (prefers-reduced-motion: reduce){.wcard:hover,.wcard:focus-within,.wcard:hover img{transform:none}}
 
 .skip{position:absolute;left:-9999px;top:8px;background:#F2A23A;color:#141A26;padding:10px 16px;border-radius:6px;font-weight:600;z-index:10}.skip:focus{left:8px}
 </style>
 </head>
 <body>
-<div style="width: 100%; background: #F6F4EF; color: #141A26; font-family: 'IBM Plex Sans', system-ui, sans-serif;">
+<div style="width: 100%; background: #F3F6FB; color: #0B1530; font-family: 'Inter', system-ui, sans-serif;">
 
 <a class="skip" href="#main">Skip to content</a>
-<header style="background: #070B14; border-bottom: 1px solid #1E2B45;">
+<header style="background: #050A1A; border-bottom: 1px solid #1C2E5A;">
 <nav aria-label="Primary" style="max-width: 1440px; margin: 0 auto; padding: 12px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 4px 32px; align-items: center; justify-content: space-between;">
-<a href="index.html" style="display: flex; align-items: baseline; gap: 14px; text-decoration: none; padding: 10px 0;"><span style="font-family: 'Newsreader', serif; font-size: 26px; font-weight: 600; color: #F6F4EF;">Jeamay Palo</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #A9B3C7;">[ Science · Strategy · Story ]</span></a>
+<a href="index.html" style="display: flex; align-items: baseline; gap: 14px; text-decoration: none; padding: 10px 0;"><span style="font-family: 'Inter Tight', 'Inter', sans-serif; font-size: 26px; font-weight: 500; color: #F3F6FB; letter-spacing: -0.025em;">Jeamay Palo</span></a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px;">
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 28px;">
-<li><a href="index.html" aria-current="page" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 600; color: #F2A23A; text-decoration: underline; text-underline-offset: 6px;">Home</a></li>
-<li><a href="work.html" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 500; color: #D5DBE6; text-decoration: none;">Work</a></li>
-<li><a href="resume.html" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 500; color: #D5DBE6; text-decoration: none;">Resume</a></li>
+<li><a href="index.html" aria-current="page" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 600; color: #6CB4FF; text-decoration: underline; text-underline-offset: 6px;">Home</a></li>
+<li><a href="work.html" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 500; color: #D7E0F0; text-decoration: none;">Work</a></li>
+<li><a href="resume.html" style="display: inline-block; padding: 12px 0; font-size: 15px; font-weight: 500; color: #D7E0F0; text-decoration: none;">Resume</a></li>
 </ul>
-<a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #F2A23A; color: #F2A23A; font-size: 14px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect with me</a>
+<a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #6CB4FF; color: #6CB4FF; font-size: 14px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect with me</a>
 </div>
 </nav>
 </header>
 
-<main id="main">
+<main id="main" style="box-shadow: 0px 2px 10px 0px #00000033; opacity: 1">
 <div>
-<section aria-labelledby="hero-h" style="position: relative; min-height: clamp(620px, 56vw, 820px); background: #070B14; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
-<img src="images/hero.jpg" alt="Illustrated placeholder: Saturn and its rings against a starfield. Replace with a public-domain Cassini photo." style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 40%; display: block;">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,11,20,0) 0%, rgba(7,11,20,0.25) 45%, rgba(7,11,20,0.94) 100%);"></div>
-<div style="position: relative; z-index: 2; width: 100%; max-width: 1280px; margin: 0 auto; padding: 160px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #F2A23A;">Science communications · JPL · NASA · CBP</p>
-<h1 id="hero-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; max-width: 900px; font-size: clamp(52px, 7vw, 112px); line-height: 0.98; letter-spacing: -0.02em; color: #F6F4EF;">Complex science, clear stories.</h1>
-<p style="margin: 0; max-width: 520px; font-size: clamp(17px, 1.4vw, 19px); line-height: 1.55; color: #D5DBE6;">I turn mission science and data into stories executives and the public act on.</p>
+<section aria-labelledby="hero-h" style="position: relative; min-height: clamp(620px, 56vw, 820px); background: #050A1A; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
+<img src="images/iss-hero.jpg" alt="The International Space Station orbiting above Earth's glowing horizon" class="hero-img" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+<div aria-hidden="true" class="hero-shade" style="position: absolute; inset: 0;"></div>
+<div class="hero-copy" style="position: relative; z-index: 2; width: 100%; max-width: 1280px; margin: 0 auto; padding: 160px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: #6CB4FF;">Science communications · JPL · NASA · CBP</p>
+<h1 id="hero-h" style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; max-width: 900px; font-size: clamp(52px, 7vw, 112px); line-height: 0.98; letter-spacing: -0.035em; color: #F3F6FB;">Complex science, clear stories.</h1>
+<p style="margin: 0; max-width: 520px; font-size: clamp(17px, 1.4vw, 19px); line-height: 1.55; color: #D7E0F0;">I turn mission science and data into stories executives and the public act on.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px;">
-<a href="#featured" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; background: #F2A23A; color: #141A26; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">See featured work</a>
-<a href="resume.pdf" download style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border: 1px solid rgba(246,244,239,0.55); color: #F6F4EF; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">Download resume</a>
+<a href="#featured" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; background: #6CB4FF; color: #0B1530; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">See featured work</a>
+<a href="resume.pdf" download style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border: 1px solid rgba(243,246,251,0.55); color: #F3F6FB; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">Download resume</a>
 </div>
-<p style="margin: 8px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #A9B3C7;">Illustration placeholder · swap in a NASA/JPL-Caltech photo and credit</p>
 </div>
 </section>
-
-<section aria-labelledby="hello-h" style="background: #F6F4EF; border-bottom: 1px solid #E2DDD3;">
+<section aria-labelledby="hello-h" style="background: #F3F6FB; border-bottom: 1px solid #DCE3EF;">
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 112px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(56px, 7vw, 96px);">
 <div style="display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: center;">
-<img src="images/headshot.jpg" alt="Headshot of Jeamay Palo (placeholder)" style="flex: 0 1 340px; width: 100%; max-width: 360px; aspect-ratio: 4 / 5; height: auto; object-fit: cover; display: block; border-radius: 8px; background: #E9E5DB;">
+<img src="images/headshot.jpg" alt="Jeamay Palo smiling in front of the Vehicle Assembly Building at NASA’s Kennedy Space Center" style="flex: 0 1 340px; width: 100%; max-width: 360px; aspect-ratio: 4 / 5; height: auto; object-fit: cover; display: block; border-radius: 8px; background: #E3E9F3;">
 <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 18px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A5200;">Who I am</p>
-<h2 id="hello-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: clamp(44px, 5vw, 72px); line-height: 1; letter-spacing: -0.015em; color: #141A26;">Hi, I'm Jem</h2>
-<p style="margin: 0; font-family: 'Newsreader', serif; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.5; color: #141A26;">I'm a Strategic Communications Specialist with a passion for turning complex technical topics into clear, engaging, and visually compelling stories that the public can understand and leaders can act on. I bridge the technical and non-technical because inside every spreadsheet, chart, and dataset is a mission impact story that matters.</p>
-<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3A4252;">I carry this passion through every stage of my career. I started as a high school math teacher, learning to explain hard things to English Learners. Then came nearly seven years at NASA, telling different mission and science stories, like <a href="work.html#cassini" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Cassini</a>, <a href="work.html#earth-science" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Earth science missions</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">the International Space Station</a>, <a href="work.html#iss" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Commercial Space</a>, and <a href="work.html#ocsdo" style="color: #9A5200; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">open science and AI</a>. Today I bring the same passion to telling the story of digital transformation at U.S. Customs and Border Protection.</p>
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #1F56B8;">Who I am</p>
+<h2 id="hello-h" style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(44px, 5vw, 72px); line-height: 1; letter-spacing: -0.035em; color: #0B1530;">Hi, I'm Jem</h2>
+<p style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.5; color: #0B1530; letter-spacing: -0.025em;">I’m a Strategic Communications Specialist with a passion for turning complex topics into clear, visually compelling stories that the public can understand and leaders can act on. I bridge the technical and non-technical because behind every number and dataset is a mission impact story that matters.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #33415C;">I’ve carried this passion through every stage of my career: from teaching high school math, to telling science and space mission stories like the <a href="case-cassini.html" style="color: rgb(31, 86, 184); font-weight: 600; text-decoration: underline; text-underline-offset: 3px">Cassini mission to Saturn</a>, <a href="case-earth-science.html" style="color: rgb(31, 86, 184); font-weight: 600; text-decoration: underline; text-underline-offset: 3px">Earth science missions</a>, the <a href="case-iss.html" style="color: rgb(31, 86, 184); font-weight: 600; text-decoration: underline; text-underline-offset: 3px">International Space Station and Commercial LEO Program</a>, and <a href="case-ocsdo.html" style="color: rgb(31, 86, 184); font-weight: 600; text-decoration: underline; text-underline-offset: 3px">NASA’s open science and AI work</a>. Today, I bring the same passion to telling the story of how <a href="case-cbp.html" style="color: rgb(31, 86, 184); font-weight: 600; text-decoration: underline; text-underline-offset: 3px">digital transformation</a> gives time back to the mission and improves service delivery at U.S. Customs and Border Protection.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; margin-top: 4px;">
-<a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; background: #141A26; color: #F6F4EF; font-size: 15px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect with me on LinkedIn</a>
-<a href="resume.html" style="display: inline-block; padding: 10px 0; font-weight: 600; font-size: 15px; color: #9A5200;">See my resume →</a>
+<a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; background: #0B1530; color: #F3F6FB; font-size: 15px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect with me on LinkedIn</a>
+<a href="resume.html" style="display: inline-block; padding: 10px 0; font-weight: 600; font-size: 15px; color: #1F56B8;">See my resume →</a>
 </div>
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 24px;">
-<h2 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(34px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.01em; color: #141A26;">What I do</h2>
-<ul class="what-i-do" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px 16px;">
-<li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
-<span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Mission Impact Reports</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
-<img src="images/ocsdo-reports.jpg" alt="OCSDO Year in Review report covers" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
-</a></li>
-<li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
-<span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Briefing Presentations</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
-<img src="images/jpl-earth-science-decks.jpg" alt="JPL Earth Science presentation title slides" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
-</a></li>
-<li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
-<span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Web &amp; UX</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
-<img src="images/cassini-archive.jpg" alt="Screenshot of the PDS Cassini Mission Archive home page" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
-</a></li>
-<li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
-<span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Stories in Motion</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
-<img src="images/ai-video.jpg" alt="Illustrated placeholder: video player" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
-</a></li>
-<li style="min-width: 0;"><a href="work.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #141A26;">
-<span style="display: flex; align-items: center; justify-content: space-between; gap: 8px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: #141A26; border: 1px solid #141A26; padding: 6px 12px; border-radius: 14px;">Data Visualization</span><span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 24px; border: 1px solid #141A26; border-radius: 999px; flex-shrink: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141A26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
-<img src="images/dataviz.jpg" alt="Illustrated placeholder: analytics dashboard" style="width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; border-radius: 6px; background: #E9E5DB;">
-</a></li>
-</ul>
+
+</div>
+</section>
+<section aria-labelledby="timeline-h" class="milkyway tl-sec" style="color: #F3F6FB;">
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6CB4FF;">My path</p>
+<h2 id="timeline-h" style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.01em;">Mission stories I've told through the years</h2>
+</div>
+<div class="tl-float">
+<img src="images/timeline.jpg" alt="Timeline of mission stories: 2018 Cassini Mission; 2019 to 2020 Earth Science Missions; 2020 to 2023 ISS and Commercial LEO Program; 2023 to 2025 NASA Open Science; 2025 to present CBP Digital Transformation." style="width: 100%; height: auto; aspect-ratio: 16 / 9; display: block;">
 </div>
 </div>
 </section>
+
+<section aria-labelledby="what-h" style="position: relative; background: #FFFFFF; color: #0B1530; border-bottom: 1px solid #DCE3EF;">
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: flex-end; justify-content: space-between;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<h2 id="what-h" style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -0.04em; color: #0B1530;">I tell my stories in different ways.</h2>
+</div>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px;">
+<li class="wcard" style="min-width: 0; background: #FFFFFF; border: 1px solid #0B1530; border-radius: 4px; padding: 10px; display: flex; flex-direction: column;">
+<div style="position: relative; border-radius: 2px; overflow: hidden; border: 1px solid #D3DCEA;">
+<img src="images/jpl-earth-science-decks.jpg" alt="JPL Earth Science presentation title slides" style="width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; display: block; background: #E3E9F3;">
+</div>
+<div style="padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #4A5873;">Presentations</p>
+<h4 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; color: #0B1530;">Briefing Presentations</h4>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33415C;">Mission decks for JPL Earth science and executive briefings for NASA and CBP leaders.</p>
+<div style="margin-top: auto; padding-top: 8px; border-top: 1px solid #D3DCEA; display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px;">
+<a href="work.html#earth-science" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 0; font-weight: 500; font-size: 14px; letter-spacing: 0.02em; color: #1F56B8; text-decoration: none;">See the work →</a>
+</div>
+</div>
+</li>
+<li class="wcard" style="min-width: 0; background: #FFFFFF; border: 1px solid #0B1530; border-radius: 4px; padding: 10px; display: flex; flex-direction: column;">
+<div style="position: relative; border-radius: 2px; overflow: hidden; border: 1px solid #D3DCEA;">
+<img src="images/ocsdo-reports.jpg" alt="OCSDO Year in Review report covers" style="width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; display: block; background: #E3E9F3;">
+</div>
+<div style="padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #4A5873;">Reports</p>
+<h4 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; color: #0B1530;">Mission Impact Reports</h4>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33415C;">Annual reports that show what a program delivered, from NASA's Office of the Chief Science Data Officer to CBP's Digital Transformation Office.</p>
+<div style="margin-top: auto; padding-top: 8px; border-top: 1px solid #D3DCEA; display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px;">
+<a href="case-ocsdo.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 0; font-weight: 500; font-size: 14px; letter-spacing: 0.02em; color: #1F56B8; text-decoration: none;">See the work →</a>
+</div>
+</div>
+</li>
+<li class="wcard" style="min-width: 0; background: #FFFFFF; border: 1px solid #0B1530; border-radius: 4px; padding: 10px; display: flex; flex-direction: column;">
+<div style="position: relative; border-radius: 2px; overflow: hidden; border: 1px solid #D3DCEA;">
+<img src="images/cassini-archive.jpg" alt="Screenshot of the PDS Cassini Mission Archive home page" style="width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; display: block; background: #E3E9F3;">
+</div>
+<div style="padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #4A5873;">Web · UX · Video</p>
+<h4 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; color: #0B1530;">Web &amp; Multimedia</h4>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33415C;">Usability testing and an event calendar for the Cassini archive, cbp.gov page redesigns in Drupal, and short videos made with AI tools.</p>
+<div style="margin-top: auto; padding-top: 8px; border-top: 1px solid #D3DCEA; display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px;">
+<a href="case-cassini.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 0; font-weight: 500; font-size: 14px; letter-spacing: 0.02em; color: #1F56B8; text-decoration: none;">See the work →</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+
 </div>
 
+<div class="milkyway tl-sec">
 <section id="featured" aria-labelledby="featured-h" style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 120px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(56px, 7vw, 104px);">
 <div style="display: flex; flex-direction: column; gap: 12px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9A5200;">Featured work</p>
-<h2 id="featured-h" style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(34px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.01em;">Mission science, made visible.</h2>
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6CB4FF;">Featured work</p>
+<h2 id="featured-h" style="margin: 0; color: #F3F6FB; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.1; letter-spacing: -0.01em;">Mission Impact Made Visible</h2>
 </div>
 
 <article style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center;">
-<img src="images/ocsdo-reports.jpg" alt="OCSDO Year in Review 2024 and 2025 report covers" style="flex: 1 1 560px; min-width: 0; aspect-ratio: 16 / 10; border-radius: 8px; width: 100%; height: auto; object-fit: cover; display: block; background: #E9E5DB;">
+<div class="fcard" style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 12px; background: rgba(5,10,26,0.28); border: 1px solid rgba(255,255,255,0.9); border-radius: 4px; overflow: hidden; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);"><img src="images/feat-earth.png" alt="Illustrated placeholder: JPL Earth Science mission deck title slides" style="width: 100%; height: auto; display: block; background: transparent;"></div>
 <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5263;">01</p>
-<h3 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(30px, 3vw, 42px); line-height: 1.1;">OCSDO Year in Review 2024 and 2025</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A4252;">Flagship annual reports for NASA's Office of the Chief Science Data Officer.</p>
-<ul aria-label="Tags" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">NASA</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Reports</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Editorial</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Design</li>
-</ul>
+<h3 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 42px); line-height: 1.1; letter-spacing: -0.025em; color: #F3F6FB;">Turning Earth’s Vital Signs into Stories</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #D7E0F0;">Mission and technology decks for JPL-managed Earth science missions, published for download on JPL's Earth Science site.</p>
+<ul aria-label="Communication products" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;"><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Presentations</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Multimedia</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Copywriting</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 4px 28px;">
-<a href="case-study.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">Read the case study →</a>
-<a href="https://science.nasa.gov/about-us/ocsdo/reports/" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">View the public reports ↗</a>
+<a href="case-earth-science.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">Read the case study →</a>
+<a href="https://earth.jpl.nasa.gov/resources/jpl-earth-science-presentations/downloads/?page=0&amp;per_page=40&amp;order=position&amp;search=&amp;category=202" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">View on JPL Earth Science ↗</a>
 </div>
 </div>
 </article>
 
 <article style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 32px 64px; align-items: center;">
-<img src="images/jpl-earth-science-decks.jpg" alt="Illustrated placeholder: JPL Earth Science mission deck title slides" style="flex: 1 1 560px; min-width: 0; aspect-ratio: 16 / 10; border-radius: 8px; width: 100%; height: auto; object-fit: cover; display: block; background: #E9E5DB;">
+<div class="fcard" style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 12px; background: rgba(5,10,26,0.28); border: 1px solid rgba(255,255,255,0.9); border-radius: 4px; overflow: hidden; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);"><img src="images/card-cassini.jpg" alt="Illustration of the Cassini spacecraft above Saturn and its rings" style="width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; display: block; border-radius: 2px;"></div>
 <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5263;">02</p>
-<h3 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(30px, 3vw, 42px); line-height: 1.1;">JPL Earth Science Presentation Library</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A4252;">Mission and technology decks for JPL-managed Earth science missions, published for download on JPL's Earth Science site.</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5263;">SMAP · GRACE and GRACE-FO · ECOSTRESS · Orbiting Carbon Observatories · TOPEX/Jason series with SWOT</p>
-<ul aria-label="Tags" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">JPL</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Presentations</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Mission storytelling</li>
-</ul>
+<h3 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 42px); line-height: 1.1; letter-spacing: -0.025em; color: #F3F6FB;">Making Cassini's Legacy Accessible</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #D7E0F0;">Conducted usability testing and redesigned the PDS Cassini Mission Archive web pages and the Event Calendar (data repository for Cassini).</p>
+<ul aria-label="Communication products" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;"><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Usability Testing</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Web Design &amp; UX</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Software Design</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Technical Documentation</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 4px 28px;">
-<a href="case-study.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">Read the case study →</a>
-<a href="https://earth.jpl.nasa.gov/resources/jpl-earth-science-presentations/downloads/?page=0&amp;per_page=40&amp;order=position&amp;search=&amp;category=202" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">View on JPL Earth Science ↗</a>
+<a href="case-cassini.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">Read the case study →</a>
+<a href="https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Cassini/Cassini.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">View the archive ↗</a>
+<a href="https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Cassini/EventCalendar/prototype.html#Saturn%20Formation,Saturn%20Interior,Saturn%20Atmospheric%20Properties,Saturn%20Dynamics,Saturn%20Aurorae,Saturn%20Magnetosphere/Ionosphere,Saturn%20Occultations" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">See the event calendar ↗</a>
 </div>
 </div>
 </article>
 
 <article style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center;">
-<img src="images/cassini-archive.jpg" alt="Illustrated placeholder: Cassini web archive pages" style="flex: 1 1 560px; min-width: 0; aspect-ratio: 16 / 10; border-radius: 8px; width: 100%; height: auto; object-fit: cover; display: block; background: #E9E5DB;">
+<div class="fcard" style="flex: 1 1 600px; min-width: 0; box-sizing: border-box; padding: 12px; background: rgba(5,10,26,0.28); border: 1px solid rgba(255,255,255,0.9); border-radius: 4px; overflow: hidden; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);"><img src="images/feat-iss.png" alt="Title slides from two NASA presentations: Future of Exploration: Commercialization, and NASA’s Plan for Continuity in Low-Earth Orbit (International Astronautical Congress 2023)" style="width: 100%; height: auto; display: block; background: transparent;"></div>
 <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5263;">03</p>
-<h3 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(30px, 3vw, 42px); line-height: 1.1;">Cassini Web Archive</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A4252;">Making 13 years of Cassini mission data easier for scientists and the public to find and use.</p>
-<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.55; color: #3A4252;">
-<li>Usability-tested the PDS Cassini Mission Archive web pages.</li>
-<li>Helped build and design the software for the archive's event calendar.</li>
-</ul>
-<ul aria-label="Tags" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;">
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">JPL</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Planetary</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Usability testing</li>
-<li style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #4A5263; border: 1px solid #C9C3B7; padding: 5px 10px; border-radius: 999px;">Software design</li>
-</ul>
+<h3 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 42px); line-height: 1.1; letter-spacing: -0.025em; color: #F3F6FB;">Keeping America in Orbit</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #D7E0F0;">Executive communications and technical writing for the International Space Station (ISS) and Commercial Low-Earth Orbit (LEO) program for NASA Headquarters.</p>
+<ul aria-label="Communication products" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px;"><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Communication Strategy</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Congressional Briefings</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Executive Briefings</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">One-Pagers</li><li style="font-size: 13px; font-weight: 500; letter-spacing: 0.01em; color: #F3F6FB; border: 1px solid rgba(255,255,255,0.45); background: rgba(5,10,26,0.35); padding: 6px 14px; border-radius: 999px;">Infographics</li></ul>
 <div style="display: flex; flex-wrap: wrap; gap: 4px 28px;">
-<a href="case-study.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">Read the case study →</a>
-<a href="https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Cassini/Cassini.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">View the archive ↗</a>
-<a href="https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Cassini/EventCalendar/prototype.html#Saturn%20Formation,Saturn%20Interior,Saturn%20Atmospheric%20Properties,Saturn%20Dynamics,Saturn%20Aurorae,Saturn%20Magnetosphere/Ionosphere,Saturn%20Occultations" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #9A5200;">See the event calendar ↗</a>
+<a href="case-iss.html" style="display: inline-block; padding: 12px 0; font-weight: 600; font-size: 16px; color: #6CB4FF;">Read the case study →</a>
 </div>
 </div>
 </article>
 
 <div style="display: flex; justify-content: center;">
-<a href="work.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; background: #141A26; color: #F6F4EF; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">See all work</a>
+<a href="work.html" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; background: #6CB4FF; color: #0B1530; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">See all work</a>
 </div>
 </section>
-
+</div>
 
 </main>
 
-<footer style="background: #070B14; color: #C9D1E0;">
-<div style="max-width: 1280px; margin: 0 auto; padding: 80px 24px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px;">
-<p style="margin: 0; max-width: 760px; font-family: 'Newsreader', serif; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.15; color: #F6F4EF;">Open to communications roles at JPL and NASA.</p>
-<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 24px 64px;">
-<li style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B3C7;">Email</span><a href="#" style="padding: 8px 0; font-size: 17px; color: #F2A23A;">[your email]</a></li>
-<li style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B3C7;">LinkedIn</span><a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="padding: 8px 0; font-size: 17px; color: #F2A23A;">linkedin.com/in/jeamay-palo-8bba1857</a></li>
-<li style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B3C7;">Location</span><span style="padding: 8px 0; font-size: 17px; color: #F6F4EF;">Alexandria, VA</span></li>
-</ul>
-<p style="margin: 0; padding-top: 24px; border-top: 1px solid #1E2B45; font-size: 13px; color: #A9B3C7;">All work shown is public or cleared for public use.</p>
+<footer style="background: #050A1A; color: #C8D4EA;">
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) 24px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end; justify-content: space-between;">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6CB4FF;">Contact</p>
+<h2 style="margin: 0; font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 400; font-size: clamp(38px, 4.4vw, 64px); line-height: 1.05; letter-spacing: -0.035em; color: #F3F6FB;">Let's connect.</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #C8D4EA;">Have a mission story that needs telling, or a role on your team? I'd love to hear from you.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px;">
+<a href="https://www.linkedin.com/in/jeamay-palo-8bba1857" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #6CB4FF; color: #0B1530; font-size: 16px; font-weight: 600; border-radius: 999px; text-decoration: none;">Connect on LinkedIn</a>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; padding-top: 24px; border-top: 1px solid #1C2E5A; font-size: 13px; color: #9FB0CF;">
+<p style="margin: 0;">All work shown is public or cleared for public use.</p>
+</div>
 </div>
 </footer>
 </div>
